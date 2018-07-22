@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>PROJECT INTERACTIVE GRAPHICS TRAIN VILLAGE</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="btn">
+            <center><button type="button" id="AnimationTrain"><b>Start/Stop Train</b></button>
+                <button type="button" id="LightTrain"> <b>Turn ON/OFF Train Light</b></button>
+                <button type="button" id="CameraTrain"> <b>Change Camera View On Train/Free</b></button>
+                <button type="button" id="info1" onclick="showText();"><b>Show/Hidden Info</b></button></center>
+        </div>
+    </div>
+
+    <div id="info" style="color:white; font-size: 20px position:absolute">
+        <center><b><br>
+        A simple village crossed by a train.<br><br>
+
+        Use the mouse to move the camera view. Press and hold the left button to rotate.<br>
+        Press and hold the right button to move the center of the view.<br>
+        Use the mouse wheel to zoom.<br><br>
+
+        The buttons on the top allow you to block the train animation, turn on/off the train's lights and set the camera on train or free.</b></center>
+    </div>
+
+    <canvas id="myCanvas"></canvas>
+    <script src="ThreeJS/three.js"></script>
+    <script src="ThreeJS/OrbitControls.js"></script>
+    <script src="ThreeJS/ObjectLoader.js"></script>
+    
+    <script src="JS/init.js"></script>
+    <script src="JS/scenario.js"></script>
+    <script src="JS/treno.js"></script>
+    <script src="JS/modelli.js"></script>
+    <script src="JS/luci.js"></script>
+    <script src="JS/animazioni.js"></script>
+    
+    
+</body>
+
+</html> 
